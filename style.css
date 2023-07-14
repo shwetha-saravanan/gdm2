@@ -37,6 +37,12 @@ li {
 	list-style: none;
 }
 
+
+
+
+
+
+
 /* SIDEBAR */
 #sidebar {
 	position: fixed;
@@ -187,6 +193,10 @@ li {
 }
 /* SIDEBAR */
 
+
+
+
+
 /* CONTENT */
 #content {
 	position: relative;
@@ -312,6 +322,8 @@ nav .profile .profile-link a:hover {
 	background: var(--grey);
 }
 /* NAVBAR */
+
+
 
 /* MAIN */
 main {
@@ -566,6 +578,11 @@ main .btn-send:hover {
 }
 /* MAIN */
 /* CONTENT */
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
 	#content {
