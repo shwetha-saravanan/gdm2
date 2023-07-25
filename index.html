@@ -8,7 +8,7 @@
   <style>
     /* Global styles */
     body {
-      background-image: url("1.jpg");
+      background-image: url("background_image.jpg");
       background-size: cover;
       background-position: center;
       margin: 0;
@@ -35,6 +35,12 @@
     }
 
     /* Box styles */
+    .box-container {
+      display: flex; /* Make the boxes flex containers */
+      justify-content: space-around; /* Distribute boxes horizontally with space-around */
+      flex-wrap: wrap; /* Allow wrapping to a new line if the boxes don't fit in a single row */
+    }
+
     .box {
       align-items: center;
       background-color: #007bff;
@@ -49,7 +55,7 @@
       height: 250px; /* Updated height for larger boxes */
       justify-content: center;
       margin: 10px;
-      width: 30%; /* Updated width for larger boxes */
+      width: calc(30% - 20px); /* Updated width for larger boxes */
       padding: 10px;
     }
 
