@@ -23,16 +23,10 @@
 html {
 	overflow-x: hidden;
 }
-
 body {
-  align-items: center;
-  background-color: #f1f1f1;
-  display: flex;
-  font-family: Arial, sans-serif;
-  height: 100vh;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
+  background-image: url('/1.jpg'); /* Replace with the actual path to your background image */
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .box {
@@ -236,6 +230,52 @@ li {
 	left: 60px;
 }
 /* NAVBAR */
+nav .doc-details {
+  display: flex;
+  align-items: center;
+  grid-gap: 8px;
+}
+
+nav .doc-details .doc-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+nav .doc-details .doc-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--dark-grey);
+}
+
+nav .doc-details .doc-specialty {
+  font-size: 12px;
+  color: var(--dark-grey);
+}
+
+nav .navbar-menu {
+  display: flex;
+  align-items: center;
+  grid-gap: 20px;
+}
+
+nav .navbar-menu .menu-item {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark-grey);
+  cursor: pointer;
+}
+
+nav .navbar-menu .menu-item:hover {
+  color: var(--blue);
+}
+
+nav .navbar-menu .menu-item.active {
+  color: var(--blue);
+  border-bottom: 2px solid var(--blue);
+}
+
 nav {
 	background: var(--light);
 	height: 64px;
