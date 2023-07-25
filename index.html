@@ -7,6 +7,53 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor's Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Additional styles for the menu bar and background image */
+    body {
+      background-image: url("background_image.jpg");
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .menu-bar {
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .doctor-details {
+      text-align: right;
+    }
+
+    .doctor-details h2 {
+      margin: 0;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-bar">
+    <div class="title">
+      <h1>GDM Risk Assessment</h1>
+    </div>
+    <div class="doctor-details">
+      <h2>Doctor's Name: Dr. John Smith</h2>
+      <p>Specialty: Gynecologist</p>
+      <p>License No: XXXXXXX</p>
+    </div>
+  </div> 
   <div class="box-container">
     <div class="box" onclick="navigateToPatientPage(1)">
       <div class="patient-info">
