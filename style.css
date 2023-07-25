@@ -25,9 +25,36 @@ html {
 }
 
 body {
-	background: var(--grey);
-	overflow-x: hidden;
+  align-items: center;
+  background-color: #f1f1f1;
+  display: flex;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
+
+.box {
+  align-items: center;
+  background-color: #007bff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  height: 100px;
+  justify-content: center;
+  margin: 10px;
+  width: 100px;
+}
+
+.box:hover {
+  background-color: #0056b3;
+}
+
 
 a {
 	text-decoration: none;
