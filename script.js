@@ -160,7 +160,10 @@ allProgress.forEach(item=> {
 
 
 
-
+function navigateToPatientPage(patientId) {
+  // Replace "patient.html" with the actual name of the HTML page for individual patient details
+  window.location.href = `patient.html?id=${patientId}`;
+}
 
 
 // APEXCHART
