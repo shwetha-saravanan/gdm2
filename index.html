@@ -5,15 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Doctor's Dashboard</title>
   <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Doctor's Dashboard</title>
-  <link rel="stylesheet" href="style.css">
   <style>
     /* Additional styles for the menu bar and background image */
     body {
@@ -41,6 +32,39 @@
       margin: 0;
       font-size: 20px;
     }
+
+    /* Updated styles for the boxes */
+    .box {
+      align-items: center;
+      background-color: #007bff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      font-weight: bold;
+      height: 150px;
+      justify-content: center;
+      margin: 10px;
+      width: 200px;
+      padding: 10px;
+    }
+
+    .box:hover {
+      background-color: #0056b3;
+    }
+
+    /* Additional styles for patient-info text */
+    .patient-info h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .patient-info p {
+      margin-bottom: 6px;
+    }
   </style>
 </head>
 <body>
@@ -55,6 +79,8 @@
     </div>
   </div> 
   <div class="box-container">
+    <!-- Boxes with patient information -->
+    <!-- Add more boxes here if needed -->
     <div class="box" onclick="navigateToPatientPage(1)">
       <div class="patient-info">
         <h3>Name: Emily Johnson</h3>
