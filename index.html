@@ -18,7 +18,7 @@
 
     /* Menu bar styles */
     .menu-bar {
-      background-color: #e6ccff; /* Lilac color for the nav bar */
+      background-color: transparent; /* Transparent background for the menu bar */
       padding: 10px;
       display: flex;
       justify-content: space-between;
@@ -32,6 +32,7 @@
     .doctor-details h2 {
       margin: 0;
       font-size: 20px;
+      color: #800080; /* Lilac color for the font in the menu bar */
     }
 
     /* Box container styles */
@@ -47,7 +48,7 @@
       background-color: #b3d9ff; /* Light pastel blue color for boxes */
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      color: #ff1493; /* Dark pink font color inside boxes */
+      color: #800080; /* Lilac color for the font inside boxes */
       cursor: pointer;
       display: flex;
       flex-direction: column;
@@ -58,6 +59,9 @@
       margin: 10px;
       width: calc(30% - 20px); /* Updated width for larger boxes */
       padding: 10px;
+      margin-left: 20%; /* 20% margin to the left */
+      background-size: cover;
+      background-position: center;
     }
 
     .box:hover {
@@ -65,13 +69,39 @@
     }
 
     /* Patient-info text styles */
+    .patient-info {
+      text-align: left; /* Align patient details to the left */
+    }
+
     .patient-info h3 {
       font-size: 18px;
       margin-bottom: 8px;
+      color: #800080; /* Lilac color for patient names */
     }
 
     .patient-info p {
       margin-bottom: 6px;
+    }
+
+    /* Background images for boxes */
+    .box:nth-child(1) {
+      background-image: url("2.jpg");
+    }
+
+    .box:nth-child(2) {
+      background-image: url("2.jpg");
+    }
+
+    .box:nth-child(3) {
+      background-image: url("2.jpg");
+    }
+
+    .box:nth-child(4) {
+      background-image: url("image4.jpg");
+    }
+
+    .box:nth-child(5) {
+      background-image: url("2.jpg");
     }
   </style>
 </head>
@@ -83,7 +113,7 @@
     <div class="doctor-details">
       <h2>Doctor's Name: Dr. John Smith</h2>
       <p>Specialty: Gynecologist</p>
-      <p>License No: CAONEGF1238G</p>
+      <p>License No: XXXXXXX</p>
     </div>
   </div> 
   <div class="box-container">
